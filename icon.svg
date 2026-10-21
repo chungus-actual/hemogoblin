@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Hemogoblin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a2a57"/><stop offset="1" stop-color="#3e0f27"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f47a97"/><stop offset="1" stop-color="#cc3560"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22.5" fill="url(#bg)"/>
+  <g transform="translate(9 3) scale(0.82)">
+    <path d="M20 47 Q9 42 0 41 Q5 56 20 64 Z" fill="#e4507a"/>
+    <path d="M80 47 Q91 42 100 41 Q95 56 80 64 Z" fill="#e4507a"/>
+    <path d="M18 51 Q11 46 6 44 Q9 53 18 59 Z" fill="#8f2450" fill-opacity="0.35"/>
+    <path d="M82 51 Q89 46 94 44 Q91 53 82 59 Z" fill="#8f2450" fill-opacity="0.35"/>
+    <ellipse cx="50" cy="60" rx="36" ry="31.3" fill="url(#cell)"/>
+    <ellipse cx="50" cy="70" rx="17" ry="8" fill="#6e1c42" fill-opacity="0.16"/>
+    <ellipse cx="33" cy="41" rx="6" ry="3" fill="#ffffff" fill-opacity="0.45" transform="rotate(-30 33 41)"/>
+    <ellipse cx="35" cy="56" rx="7" ry="8" fill="#ffffff"/>
+    <ellipse cx="65" cy="56" rx="7" ry="8" fill="#ffffff"/>
+    <circle cx="35.6" cy="57.5" r="3.75" fill="#2a1c21"/>
+    <circle cx="65.6" cy="57.5" r="3.75" fill="#2a1c21"/>
+    <path d="M44 72 Q50 78 56 72" fill="none" stroke="#2a1c21" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M52 74.6 L55 73.2 L54 78 Z" fill="#ffffff"/>
+  </g>
+</svg>

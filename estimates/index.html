@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Estimates Work · Hemogoblin</title>
+<meta name="description" content="Exactly how Hemogoblin estimates periods, phases, the fertile window and temperature shifts.">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="../"><img src="../icon.svg" alt=""><span>Hemogoblin</span></a>
+  <nav>
+    <a href="../privacy/">Privacy</a>
+    <a href="../terms/">Terms</a>
+    <a href="../support/">Support</a>
+  </nav>
+</header>
+
+<main>
+<h1>How estimates work</h1>
+<p class="meta">Hemogoblin 1.0</p>
+<p class="lede">Every estimate comes from what you log, calculated on your iPhone with the rules below. No black box, no server, no guessing from other people's data.</p>
+
+<div class="card warn">
+  <p><strong>Estimates, not guarantees.</strong> Cycles vary, and these rules can be off by days. Don't use them to prevent pregnancy or to make medical decisions. See the <a href="../terms/">Terms</a>.</p>
+</div>
+
+<h2>Periods</h2>
+<ul>
+  <li>A period starts on a day with light, medium or heavy flow after two or more days without one. Spotting doesn't start a period, and days you didn't log count as no flow.</li>
+  <li>Your usual period length is the median of the periods you've logged. One-day periods are skipped, since they usually mean only the first day was logged. Until there's history, it's the length you gave at setup, or 5 days.</li>
+</ul>
+
+<h2>The next period</h2>
+<ul>
+  <li><strong>The date:</strong> your last period's start plus the median of your last six cycle lengths (with an even number, the upper of the two middle values). With only one period logged, it uses the cycle length you gave at setup, or 28 days.</li>
+  <li><strong>The likely range:</strong> from your shortest to your longest of those recent cycles.</li>
+  <li><strong>Odd cycles:</strong> once there are three cycles to compare, a cycle over 1.5 times your median (probably a missed log) or under 0.6 times (probably bleeding mid-cycle) is flagged and left out of the range, so one forgotten period doesn't throw off the next six months.</li>
+  <li><strong>Irregular cycles:</strong> when recent cycles differ by more than 7 days, the app tells you the date is rough.</li>
+</ul>
+
+<h2>Phases and the fertile window</h2>
+<ul>
+  <li><strong>Estimated ovulation:</strong> cycle day (cycle length minus 14), so day 14 of a 28-day cycle, and never sooner than 3 days after your period. Fourteen days is a textbook average for the time from ovulation to the next period; yours may be different. With body signals, a temperature shift moves it (see below).</li>
+  <li><strong>Ovulation phase:</strong> the estimated day, plus a day either side.</li>
+  <li><strong>Fertile window:</strong> 5 days before the estimated ovulation through the day after it, never during your period.</li>
+  <li><strong>Follicular phase:</strong> after your period until the ovulation phase. <strong>Luteal phase:</strong> after the ovulation phase until your next period. <strong>Late:</strong> past the expected start.</li>
+</ul>
+
+<h2>Temperature shifts</h2>
+<p>Only if you turn on body signals and Apple Health has nightly temperatures.</p>
+<ul>
+  <li><strong>One temperature a night.</strong> A thermometer's readings are used for any cycle with six or more of them; otherwise Apple Watch's sleeping wrist temperature. The two are never mixed in one cycle, because they read differently.</li>
+  <li><strong>A shift</strong> is three readings within four nights, each at least 0.2 °C (0.36 °F) above the highest of the six nights before them, with at least five of those six recorded. A night more than 1 °C above them is skipped as a fever, a drink or a hot room. If two of the next three readings drop back, the shift is withdrawn.</li>
+  <li><strong>What it means:</strong> a sustained rise usually follows ovulation by a day or two, but it isn't proof of ovulation. The app puts the estimated ovulation on the night before the shift, give or take two days.</li>
+  <li><strong>Your own luteal length.</strong> Once three finished cycles each have a shift, the median number of days from estimated ovulation to the next period becomes yours. When the current cycle shows a shift, the next period is estimated from it plus that length, with a range from your shortest to your longest (at least two days either side).</li>
+  <li><strong>Resting heart rate</strong> before and after the shift is shown as a comparison only. It doesn't change any date.</li>
+</ul>
+
+<h2>Patterns and trends</h2>
+<ul>
+  <li>A symptom or mood becomes a pattern once it's been logged at least 3 times, across at least 2 cycles, and at least 60% of those logs fall within 2 days of the same point: a cycle day, or a number of days before a period.</li>
+  <li>Trends compare your last three finished cycles with the three before them.</li>
+  <li>Findings about temperature and heart rate appear only once three cycles agree.</li>
+</ul>
+
+<h2>How close it's been</h2>
+<p>Insights replays the rule above on your own history: for each past period, what the app would have estimated using only what was logged before it, and how far off that was. A cycle that looks like a missed log isn't counted against it.</p>
+
+<h2>What doesn't count</h2>
+<p>The moon phases on the calendar are there for fun. They don't affect any estimate. Neither do the curiosities.</p>
+</main>
+
+<footer>
+  <p>Estimates only. Best used in partnership with a healthcare professional.</p>
+  <p><a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a> · <a href="../estimates/">How estimates work</a></p>
+</footer>
+</div>
+</body>
+</html>
