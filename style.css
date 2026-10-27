@@ -73,8 +73,17 @@ strong { font-weight: 650; }
 }
 .card > :first-child { margin-top: 0; }
 .card > :last-child { margin-bottom: 0; }
-.card.short { border-left: 4px solid var(--teal); }
-.card.warn { border-left: 4px solid var(--gold); }
+/* the two callouts: the whole card takes the colour (border and a soft wash), no edge stripe */
+.card.short {
+  border-color: var(--teal);
+  border-color: color-mix(in srgb, var(--teal) 45%, var(--line));
+  background: color-mix(in srgb, var(--teal) 8%, var(--card));
+}
+.card.warn {
+  border-color: var(--gold);
+  border-color: color-mix(in srgb, var(--gold) 50%, var(--line));
+  background: color-mix(in srgb, var(--gold) 9%, var(--card));
+}
 
 .lede { font-size: 20px; color: var(--ink-2); margin: 0 0 28px; }
 .hero { text-align: center; padding: 48px 0 16px; }
